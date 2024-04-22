@@ -342,13 +342,13 @@ export default function AddUserPage() {
               <strong>User List</strong>
             </h6>
             <div>
-              <button
+              {/* <button
                 className="btn btn-info"
                 data-bs-toggle="modal"
                 data-bs-target="#bulkModal"
               >
                 Bulk Insert
-              </button>
+              </button> */}
               {/* <div className="d-flex">
                 <input
                   className="form-control m-0 p-1"
