@@ -1,0 +1,11 @@
+userId,full_name,is_external,email,phone,role,password
+U3223,John Doe,false,johndoe@example.com,555-1234,"admin,teacher,exam committee",ABC123
+U5284,Jane Smith,true,janesmith@example.com,555-5678,"admin,teacher",DEF456
+U1719,Michael Johnson,false,michaeljohnson@example.com,555-9012,admin,GHI789
+U9423,Emily Brown,true,emilybrown@example.com,555-3456,teacher,JKL012
+U7745,David Lee,false,davidlee@example.com,555-7890,teacher,MNO345
+U2389,Sarah Taylor,true,sarahtaylor@example.com,555-2345,admin,PQR678
+U6098,Christopher Garcia,false,christophergarcia@example.com,555-6789,teacher,STU901
+U4021,Amanda Martinez,true,amandamartinez@example.com,555-1234,teacher,VWX234
+U8312,James Rodriguez,false,jamesrodriguez@example.com,555-5678,admin,YZ0123
+U1634,Emma Hernandez,true,emmahernandez@example.com,555-9012,teacher,456ABC

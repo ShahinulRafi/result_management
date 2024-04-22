@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f5f5f5;
+}
+
+.sidebarLink {
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding: 5px 10px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-bottom: 1px solid rgb(0, 225, 255);
+  width: 100%;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.view-section {
+  display: block;
+}
+
+.print-section {
+  display: none;
+}
+
+@media print {
+    .view-section {
+        display: none;
+    }
+    
+    .print-section {
+        display: block;
+    }
+}

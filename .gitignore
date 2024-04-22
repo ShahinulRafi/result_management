@@ -1,0 +1,29 @@
+# Ignore node_modules directory
+node_modules/
+
+backend/node_modules/
+frontend/node_modules/
+
+
+# Ignore environment-specific configuration files
+.env
+
+# Ignore log files
+*.log
+
+# Ignore IDE and editor-specific files
+.idea/
+.vscode/
+
+# Ignore npm-debug.log
+npm-debug.log
+
+# Ignore Mac OS system files
+.DS_Store
+
+# Ignore compiled Python files
+*.pyc
+__pycache__/
+
+# Ignore compiled Java classes
+*.class
