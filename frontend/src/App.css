@@ -8,7 +8,9 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: #f5f5f5;
 }
-
+.text-xs{
+  font-size: 10px;
+}
 .sidebarLink {
   display: block;
   text-decoration: none;

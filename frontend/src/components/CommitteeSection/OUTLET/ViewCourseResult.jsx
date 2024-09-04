@@ -196,10 +196,128 @@ export default function ViewCourseResult() {
               {Object.values(resultList).map((studentGroup, index) => (
                 <div className="card mb-3" key={index}>
                   <div className="card-body">
-                    <h5 className="card-title">{studentGroup[0].full_name}</h5>
-                    <h6 className="card-subtitle mb-2 text-muted">
-                      Student ID: {Object.keys(resultList)[index]}
-                    </h6>
+                    <div className="d-flex justify-content-between">
+                      <div className="text-xs">
+                        <div>GRADING SYSTEM</div>
+                        <div className="d-flex justify-content-between">
+                          <div className="">Numerical Grade</div>
+                          <div className="">Letter Grade</div>
+                          <div className="">Grade Point</div>
+                        </div>
+
+                        <div className="d-flex justify-content-between">
+                          <div className="">80% and above </div>
+                          <div className="">A+</div>
+                          <div className="">4.00</div>
+                        </div>
+                        <div className="d-flex justify-content-between">
+                          <div className="">75% to less than 80%</div>
+                          <div className="">A</div>
+                          <div className="">3.75</div>
+                        </div>
+                        <div className="d-flex justify-content-between">
+                          <div className="">70% to less than 75%</div>
+                          <div className="">A-</div>
+                          <div className="">3.50</div>
+                        </div>
+                        <div className="d-flex justify-content-between">
+                          <div className="">65% to less than 70%</div>
+                          <div className="">B+</div>
+                          <div className="">3.25</div>
+                        </div>
+                        <div className="d-flex justify-content-between">
+                          <div className="">60% to less than 65%</div>
+                          <div className="">B</div>
+                          <div className="">3.00</div>
+                        </div>
+                        <div className="d-flex justify-content-between">
+                          <div className="">55% to less than 60%</div>
+                          <div className="">B-</div>
+                          <div className="">2.75</div>
+                        </div>
+                        <div className="d-flex justify-content-between">
+                          <div className="">50% to less than 55%</div>
+                          <div className="">C+</div>
+                          <div className="">2.50</div>
+                        </div>
+                        <div className="d-flex justify-content-between">
+                          <div className="">45% to less than 50%</div>
+                          <div className="">C</div>
+                          <div className="">2.25</div>
+                        </div>
+                        <div className="d-flex justify-content-between">
+                          <div className="">40% to less than 45%</div>
+                          <div className="">D</div>
+                          <div className="">2.00</div>
+                        </div>
+                        <div className="d-flex justify-content-between">
+                          <div className="">Less than 40%</div>
+                          <div className="">F</div>
+                          <div className="">0.00</div>
+                        </div>
+                        <div className="d-flex justify-content-between">
+                          <div className="">Incomplete/absent</div>
+                          <div className="">X</div>
+                          <div className="">X</div>
+                        </div>
+                        <div className="d-flex justify-content-between">
+                          <div className="">One Credit Mark</div>
+                          <div className=""></div>
+                          <div className="">25</div>
+                        </div>
+                        <div className="d-flex justify-content-between">
+                          <div className="">Total Credit Offered</div>
+                          <div className=""></div>
+                          <div className="">24</div>
+                        </div>
+                      </div>
+                      <div className="text-center">
+                        <img
+                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKptyLdCttvlAPQM8Z3WsKx45iutposa6HRQ&s"
+                          alt=""
+                          width={50}
+                          height={50}
+                          className="mb-3"
+                          style={{ objectFit: "contain" }}
+                        />
+                        <div className="fw-bold">University of Banagladesh</div>
+                        <div className="fw-bold">Chittagong Bangladesh</div>
+                        <div className="fw-bold">Grade Sheet</div>
+                        <div className="fw-bold">M.S. Examination - 2021</div>
+                        <div className="fw-bold">(Thesis Groudiv)</div>
+                        <div className="fw-bold">
+                          Held in Octobor - December 2022
+                        </div>
+                      </div>
+                      <div>
+                        <div className="d-flex justify-content-between">
+                          <div className="">Course No.</div>
+                          <div className=""> Title of Courses </div>
+                          <div className=""> Marks</div>
+                        </div>
+                        <div className="d-flex justify-content-between">
+                          <div className="">BOT 101</div>
+                          <div className="">Microbiology</div>
+                          <div className="">50</div>
+                        </div>
+                        <div className="d-flex justify-content-between">
+                          <div className="">BOT 102</div>
+                          <div className="">Microbiology 2</div>
+                          <div className="">75</div>
+                        </div>
+                      </div>
+                    </div>
+                    <h5 className="card-title text-center mt-5 mb-3 fw-bold">
+                      Name: {studentGroup[0].full_name}
+                    </h5>
+                    <div className="d-flex justify-content-between  ">
+                      <h6 className=" mb-2 ">
+                        ID No: {Object.keys(resultList)[index]}
+                      </h6>
+
+                      <h6 className=" mb-2 ">Session : 2020 -2021</h6>
+                      <div></div>
+                    </div>
                     <table className="table table-bordered align-middle">
                       <thead>
                         <tr className="text-center">
@@ -320,8 +438,49 @@ export default function ViewCourseResult() {
                               .toFixed(2)}
                           </td>
                         </tr>
+
+                        <tr>
+                          <td colspan="4">
+                            Result:{" "}
+                            {/* ({student.final_obtain_marks}/
+                                {student.final_total_marks}) */}
+                          </td>
+
+                          <td colspan="4">Remarks:</td>
+                        </tr>
                       </tbody>
                     </table>
+                  </div>
+                  <div className="p-3 pb-5">
+                    <div className="d-flex gap-5">
+                      <div className="">
+                        Date of Publication :{" "}
+                        <span className="border-bottom">4 Sept 2024</span>
+                      </div>{" "}
+                      <div>
+                        Prepared by: Prof. Dr. Mohammad Musharof Hossain
+                      </div>
+                      <div></div>
+                    </div>
+
+                    <div className="d-flex justify-content-between mt-4 align-items-end  ">
+                      <div className="d-flex">
+                        <div className="w-50">
+                          Date of Issue :{" "}
+                          <span className="border-bottom"> 4 Aug 2024 </span>{" "}
+                        </div>{" "}
+                        <div>
+                          Compared by: Prof. Dr. Mohammad Musharof Hossain
+                        </div>
+                      </div>
+                      <div className="text-center">
+                        <span className="fw-bold">
+                          Controller of Examination{" "}
+                        </span>{" "}
+                        <br />
+                        <span>University of Chittagong</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
               ))}
